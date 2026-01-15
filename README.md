@@ -1,20 +1,89 @@
-# Mobile LLM
+# 🤖 Mobile LLM
 
-A powerful React Native application that runs large language models (LLMs) locally on mobile devices. Experience the power of AI without requiring an internet connection or cloud services.
+<div align="center">
 
-## Overview
+**A powerful React Native application that runs large language models (LLMs) locally on mobile devices**
+
+Experience the power of AI without requiring an internet connection or cloud services
+
+[![React Native](https://img.shields.io/badge/React%20Native-0.79.5-blue.svg)](https://reactnative.dev/)
+[![Expo](https://img.shields.io/badge/Expo-~53.0.0-000020.svg)](https://expo.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue.svg)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+</div>
+
+---
+
+## 📑 Table of Contents
+
+- [Overview](#-overview)
+- [Screenshots](#-screenshots)
+- [Key Features](#-key-features)
+- [Tech Stack](#-tech-stack)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Architecture](#-architecture)
+- [Deployment](#-deployment)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Acknowledgments](#-acknowledgments)
+
+---
+
+## 🌟 Overview
 
 Mobile LLM demonstrates how to integrate local LLM execution into mobile applications using React Native and Expo. The app showcases on-device AI inference, allowing users to interact with language models directly on their smartphones with complete privacy and offline capability.
 
-**Key Highlights:**
+### Key Highlights
+
 - 🤖 **Local AI Execution** - Run LLMs entirely on-device using llama.rn
-- 🎨 **Beautiful Themes** - Light, Dark, and Liquid Glass themes with smooth transitions
+- 🎨 **Beautiful Themes** - Light, Dark themes with smooth transitions
 - 📱 **Device Optimized** - Automatic parameter tuning based on device capabilities
 - 💾 **Model Management** - Download and manage GGUF models from HuggingFace
 - 🔍 **Vector Database** - Context-aware responses using local embeddings
 - ⚡ **Performance Focused** - Optimized for mobile hardware constraints
 
-## Features
+---
+
+## 📸 Screenshots
+
+<div align="center">
+
+### Chat Interface - Liquid Glass Theme
+<img src="assets/images/4/llm-app-interface-7.png" width="250" alt="Liquid Glass Theme">
+
+### Chat Interface - Dark Theme
+<img src="assets/images/4/llm-app-interface-8.png" width="250" alt="Dark Theme">
+
+### Chat Interface - Light Theme
+<img src="assets/images/4/llm-app-interface-1.png" width="250" alt="Light Theme">
+
+### Settings - Theme Selection
+<img src="assets/images/4/llm-app-interface-6.png" width="250" alt="Theme Selection">
+
+### Settings - AI Configuration
+<img src="assets/images/4/llm-app-interface-2.png" width="250" alt="AI Configuration">
+
+### Model Management
+<img src="assets/images/4/llm-app-interface-4.png" width="250" alt="Model Management">
+
+### System Performance
+<img src="assets/images/4/llm-app-interface-5.png" width="250" alt="System Performance">
+
+### Context Rules
+<img src="assets/images/4/llm-app-interface-9.png" width="250" alt="Context Rules">
+
+### Embedding Model Panel
+<img src="assets/images/4/llm-app-interface-3.png" width="250" alt="Embedding Model">
+
+</div>
+
+---
+
+## ✨ Key Features
 
 ### 🤖 Local LLM Execution
 - Run large language models entirely on your mobile device
@@ -50,9 +119,11 @@ Mobile LLM demonstrates how to integrate local LLM execution into mobile applica
 - Pre-configured profiles for popular devices
 - Real-time performance monitoring
 - Smart resource allocation based on available memory
-- customizable resource allocation 
+- Customizable resource allocation
 
-## Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 ### Core Framework
 - **React Native 0.79.5** - Cross-platform mobile framework
@@ -80,7 +151,9 @@ Mobile LLM demonstrates how to integrate local LLM execution into mobile applica
 - Cosine similarity search for context retrieval
 - Efficient indexing for fast lookups
 
-## Prerequisites
+---
+
+## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -94,34 +167,38 @@ Before you begin, ensure you have the following installed:
   - Android device with USB debugging enabled
   - iOS device with development provisioning profile
 
-## Installation
+---
+
+## 🚀 Installation
 
 Follow these steps to set up the project locally:
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/mobile-llm.git
-   cd mobile-llm
-   ```
+### 1. Clone the repository
+```bash
+git clone https://github.com/Mxhammed-Ali/Mobile-Llm-app.git
+cd Mobile-Llm-app
+```
 
-2. **Install dependencies**
-   ```bash
-   npm install --legacy-peer-deps
-   ```
-   
-   > **Note**: The `--legacy-peer-deps` flag is required due to peer dependency conflicts between some packages.
+### 2. Install dependencies
+```bash
+npm install --legacy-peer-deps
+```
 
-3. **Prebuild native projects** (if running on physical device)
-   ```bash
-   npx expo prebuild
-   ```
+> **Note**: The `--legacy-peer-deps` flag is required due to peer dependency conflicts between some packages.
 
-4. **Start the development server**
-   ```bash
-   npm start
-   ```
+### 3. Prebuild native projects (if running on physical device)
+```bash
+npx expo prebuild
+```
 
-## Usage
+### 4. Start the development server
+```bash
+npm start
+```
+
+---
+
+## 💻 Usage
 
 ### Starting the Development Server
 
@@ -153,29 +230,31 @@ This builds and launches the app on the iOS simulator (macOS only).
 
 ### Using the App
 
-1. **Chat Screen**
-   - Type your message in the input field
-   - Tap send to interact with the local LLM
-   - View conversation history
-   - Model responses are generated entirely on-device
+#### 1. Chat Screen
+- Type your message in the input field
+- Tap send to interact with the local LLM
+- View conversation history
+- Model responses are generated entirely on-device
 
-2. **Settings Screen**
-   - **Theme & Appearance**: Choose between Light, Dark, or Liquid Glass themes
-   - **AI Configuration**: Adjust model parameters (context size, GPU layers, threads)
-   - **Device Optimization**: Auto-optimize settings for your device
-   - **Model Management**: Download custom models from HuggingFace
-   - **Device Information**: View hardware specs and system details
+#### 2. Settings Screen
+- **Theme & Appearance**: Choose between Light, Dark, or Liquid Glass themes
+- **AI Configuration**: Adjust model parameters (context size, GPU layers, threads)
+- **Device Optimization**: Auto-optimize settings for your device
+- **Model Management**: Download custom models from HuggingFace
+- **Device Information**: View hardware specs and system details
 
-3. **Model Management**
-   - Navigate to Settings → Model Management
-   - Enter HuggingFace GGUF model URL
-   - Monitor download progress
-   - Switch between downloaded models
+#### 3. Model Management
+- Navigate to Settings → Model Management
+- Enter HuggingFace GGUF model URL
+- Monitor download progress
+- Switch between downloaded models
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```
-DeepSeekMobile/
+Mobile-Llm-app/
 ├── app/                          # App screens
 │   └── settings.tsx              # Settings and configuration screen
 ├── components/                   # Reusable UI components
@@ -192,7 +271,7 @@ DeepSeekMobile/
 │   ├── EmbeddingModelPanel.tsx   # Embedding model controls
 │   └── LogsViewer.tsx            # Debug logs viewer
 ├── constants/                    # App constants
-│   └── Colors.ts                 # Theme color definitions (Light/Dark/Liquid Glass)
+│   └── Colors.ts                 # Theme color definitions
 ├── contexts/                     # React contexts
 │   ├── ChatContext.tsx           # Chat state management
 │   └── ThemeContext.tsx          # Theme state management
@@ -232,113 +311,9 @@ DeepSeekMobile/
 - **constants/Colors.ts**: Centralized theme color definitions for all three themes
 - **utils/modelStorage.ts**: File system operations for model downloads and storage
 
-## Screenshots
-
-### 1. Chat Interface - Light Theme
-*Shows the main chat screen with LLM conversation in light mode*
-
-![Chat Screen - Light Mode](screenshots/chat-light.png)
-
-**What to capture:** Main chat screen with a conversation, showing message bubbles, input field, and light theme colors.
-
 ---
 
-### 2. Chat Interface - Dark Theme
-*Shows the same chat interface optimized for low-light environments*
-
-![Chat Screen - Dark Mode](screenshots/chat-dark.png)
-
-**What to capture:** Same chat screen but with dark theme enabled, demonstrating the theme switching capability.
-
----
-
-### 3. Chat Interface - Liquid Glass Theme
-*Shows the premium glass morphism theme with gradients*
-
-![Chat Screen - Liquid Glass Theme](screenshots/chat-liquid-glass.png)
-
-**What to capture:** Chat screen with the Liquid Glass theme showing purple/blue gradients and blur effects.
-
----
-
-### 4. Settings Screen - Theme Selection
-*Shows the theme picker with all three theme options*
-
-![Settings - Theme Selection](screenshots/settings-themes.png)
-
-**What to capture:** Settings screen with the theme selection cards visible (Light, Dark, Liquid Glass options).
-
----
-
-### 5. Settings Screen - AI Configuration
-*Shows device optimization and AI parameter controls*
-
-![Settings - AI Configuration](screenshots/settings-ai-config.png)
-
-**What to capture:** Settings screen scrolled to show AI Configuration section with context size, GPU layers, and thread controls.
-
----
-
-### 6. Model Management
-*Shows model download and management interface*
-
-![Model Management](screenshots/model-management.png)
-
-**What to capture:** Settings screen showing model management section with download progress or available models.
-
----
-
-### 7. Device Information
-*Shows hardware specs and system details*
-
-![Device Information](screenshots/device-info.png)
-
-**What to capture:** Settings screen scrolled to device information section showing RAM, CPU, and device model.
-
----
-
-### 8. Model Loading Status
-*Shows the model initialization process*
-
-![Model Loading](screenshots/model-loading.png)
-
-**What to capture:** Chat screen showing the model loading indicator or status message.
-
----
-
-### How to Add Your Screenshots
-
-1. **Create the screenshots directory:**
-   ```bash
-   mkdir screenshots
-   ```
-
-2. **Capture screenshots from your device:**ool or device screenshot (Power + Volume Down)
-   - **iOS**: Use Simulator's screenshot tool (Cmd + S) or device screenshot (Side Button + Volume Up)
-
-3. **Name your files exactly as shown above:**
-   - `chat-light.png`
-   - `chat-dark.png`
-   - `chat-liquid-glass.png`
-   - `settings-themes.png`
-   - `settings-ai-config.png`
-   - `model-management.png`
-   - `device-info.png`
-   - `model-loading.png`
-
-4. **Place all screenshots in the `screenshots/` directory**
-
-5. **The README will automatically display them** (the markdown image links are already in place above)
-
-> **Tip:** For best results, use consistent device orientation (portrait recommended) and capture at the same resolution for all screenshots.
-   - **Android**: Use Android Studio's screenshot t
-
-## Deployment
-
-The code is fully functional and ready for deployment. You only need to sign the app for distribution.
-
-
-## Architecture
+## 🏗️ Architecture
 
 Mobile LLM follows a modular architecture designed for maintainability and extensibility.
 
@@ -375,9 +350,27 @@ Mobile LLM follows a modular architecture designed for maintainability and exten
 
 6. **Vector Database**: Custom lightweight vector store optimized for mobile constraints, using cosine similarity for semantic search.
 
-For detailed design documentation, see [design.md](.kiro/specs/opensource-rebrand/design.md).
+---
 
-## Contributing
+## 🚢 Deployment
+
+The code is fully functional and ready for deployment. You only need to sign the app for distribution.
+
+### Building for Production
+
+#### Android
+```bash
+eas build --platform android
+```
+
+#### iOS
+```bash
+eas build --platform ios
+```
+
+---
+
+## 🤝 Contributing
 
 Contributions are welcome! Here's how you can help:
 
@@ -410,7 +403,9 @@ Contributions are welcome! Here's how you can help:
 - 🧪 Test coverage
 - 🌍 Internationalization (i18n)
 
-## License
+---
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -423,7 +418,9 @@ The MIT License is a permissive open-source license that allows you to:
 With the requirement to:
 - 📄 Include the original license and copyright notice
 
-## Acknowledgments
+---
+
+## 🙏 Acknowledgments
 
 - **llama.cpp** - The underlying C++ library that powers local LLM inference
 - **llama.rn** - React Native bindings for llama.cpp
@@ -433,21 +430,12 @@ With the requirement to:
 
 ---
 
-## 📸 Screenshot Checklist
-
-Before publishing, capture these 8 screenshots and place them in the `screenshots/` directory:
-
-- [ ] `chat-light.png` - Chat screen in light theme
-- [ ] `chat-dark.png` - Chat screen in dark theme  
-- [ ] `chat-liquid-glass.png` - Chat screen in liquid glass theme
-- [ ] `settings-themes.png` - Settings showing theme selection
-- [ ] `settings-ai-config.png` - Settings showing AI configuration
-- [ ] `model-management.png` - Model download/management interface
-- [ ] `device-info.png` - Device information panel
-- [ ] `model-loading.png` - Model loading status indicator
-
----
+<div align="center">
 
 **Mobile LLM** - Bringing the power of large language models to your pocket, with complete privacy and offline capability.
 
 Made with ❤️ by the open-source community
+
+[⬆ Back to Top](#-mobile-llm)
+
+</div>
