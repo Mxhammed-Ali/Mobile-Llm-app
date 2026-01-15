@@ -1,0 +1,40 @@
+{
+  "expo": {
+      "name": "Mobile LLM",
+  "slug": "mobile-llm",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "mobilellm",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "description": "Run large language models locally on your mobile device",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mobilellm.app"
+    },
+    "android": {
+      "icon": "./assets/images/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.mobilellm.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      "expo-splash-screen",
+      "expo-sqlite"
+    ]
+  }
+}
