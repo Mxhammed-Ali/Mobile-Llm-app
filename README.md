@@ -40,7 +40,7 @@ Mobile LLM demonstrates how to integrate local LLM execution into mobile applica
 ### Key Highlights
 
 - 🤖 **Local AI Execution** - Run LLMs entirely on-device using llama.rn
-- 🎨 **Beautiful Themes** - Light, Dark themes with smooth transitions
+- 🎨 **Beautiful Themes** - Light and Dark themes with smooth transitions
 - 📱 **Device Optimized** - Automatic parameter tuning based on device capabilities
 - 💾 **Model Management** - Download and manage GGUF models from HuggingFace
 - 🔍 **Vector Database** - Context-aware responses using local embeddings
@@ -52,23 +52,20 @@ Mobile LLM demonstrates how to integrate local LLM execution into mobile applica
 
 <div align="center">
 
-### Chat Interface - Liquid Glass Theme
-<img src="assets/images/4/llm-app-interface-7.png" width="250" alt="Liquid Glass Theme">
+### Main screen
+<img src="assets/images/4/llm-app-interface-7.png" width="250" alt="Dark Theme">
 
-### Chat Interface - Dark Theme
-<img src="assets/images/4/llm-app-interface-8.png" width="250" alt="Dark Theme">
+### Chat Interface - Dark Theme (Alternative View)
+<img src="assets/images/4/llm-app-interface-3.png" width="250" alt="Dark Theme Alternative">
 
 ### Chat Interface - Light Theme
 <img src="assets/images/4/llm-app-interface-1.png" width="250" alt="Light Theme">
 
-### Settings - Theme Selection
+### Chat selection Selection
 <img src="assets/images/4/llm-app-interface-6.png" width="250" alt="Theme Selection">
 
 ### Settings - AI Configuration
 <img src="assets/images/4/llm-app-interface-2.png" width="250" alt="AI Configuration">
-
-### Model Management
-<img src="assets/images/4/llm-app-interface-4.png" width="250" alt="Model Management">
 
 ### System Performance
 <img src="assets/images/4/llm-app-interface-5.png" width="250" alt="System Performance">
@@ -77,7 +74,7 @@ Mobile LLM demonstrates how to integrate local LLM execution into mobile applica
 <img src="assets/images/4/llm-app-interface-9.png" width="250" alt="Context Rules">
 
 ### Embedding Model Panel
-<img src="assets/images/4/llm-app-interface-3.png" width="250" alt="Embedding Model">
+<img src="assets/images/4/llm-app-interface-4.png" width="250" alt="Embedding Model">
 
 </div>
 
@@ -95,7 +92,6 @@ Mobile LLM demonstrates how to integrate local LLM execution into mobile applica
 ### 🎨 Theme Customization
 - **Light Theme**: Clean and bright interface for daytime use
 - **Dark Theme**: Easy on the eyes for low-light environments
-- **Liquid Glass**: Apple-inspired design with purple/blue gradients and glass morphism
 - Persistent theme preferences saved locally
 - Optional system theme following for automatic switching
 
@@ -142,7 +138,7 @@ Mobile LLM demonstrates how to integrate local LLM execution into mobile applica
 - **@react-navigation/native ^7.0.14** - Navigation framework
 - **@react-navigation/bottom-tabs ^7.1.5** - Tab-based navigation for main app screens
 - **expo-linear-gradient ~14.1.5** - Gradient backgrounds for theming system
-- **expo-blur ~14.1.5** - Backdrop blur effects for glass morphism theme
+- **expo-blur ~14.1.5** - Backdrop blur effects for UI elements
 - **react-native-reanimated ~3.17.4** - Smooth animations and transitions
 
 ### Vector Database
@@ -237,7 +233,7 @@ This builds and launches the app on the iOS simulator (macOS only).
 - Model responses are generated entirely on-device
 
 #### 2. Settings Screen
-- **Theme & Appearance**: Choose between Light, Dark, or Liquid Glass themes
+- **Theme & Appearance**: Choose between Light and Dark themes
 - **AI Configuration**: Adjust model parameters (context size, GPU layers, threads)
 - **Device Optimization**: Auto-optimize settings for your device
 - **Model Management**: Download custom models from HuggingFace
@@ -308,7 +304,7 @@ Mobile-Llm-app/
 - **services/ModelManagerService.ts**: Handles LLM initialization, inference, and model lifecycle
 - **services/VectorStoreService.ts**: Manages vector database for context retrieval
 - **components/ModernChatScreen.tsx**: Main chat interface with message handling
-- **constants/Colors.ts**: Centralized theme color definitions for all three themes
+- **constants/Colors.ts**: Centralized theme color definitions for both themes
 - **utils/modelStorage.ts**: File system operations for model downloads and storage
 
 ---
